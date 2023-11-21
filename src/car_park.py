@@ -9,7 +9,8 @@ class CarPark:
         self.capacity = capacity
         self.current_vehicle_count = current_vehicle_count
         self.sensors = sensors or []
-        self.sensors = sensors or []
+        self.displays = displays or []
 
     def __str__(self):
         return f"Carpark at {self.location}, with {self.capacity} bays."
+
