@@ -3,11 +3,11 @@ class Display:
                  id,
                  message="",
                  is_on=False,
-                 car_park=None):
+                 carpark=None):
         self.id = id
         self.message = message
         self.is_on = is_on
-        self.car_park = car_park
+        self.carpark = carpark
 
     def __str__(self):
         return f"Display {self.id}: {self.message}"
