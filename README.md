@@ -40,3 +40,7 @@
 #### Q. Which class is responsible for the time (and why)?
 ##### Like temperature, I think the carpark class manages time. This is because Carpark thinks that the display is updateed and the display class
 ##### receives and displays the updated information.
+
+![AT3P4](https://github.com/Chloe23077/AT3ProjoctV2/assets/141309342/02b333c1-7d14-4404-9f9e-9b65f9dfdce1)
+
+![AT3P5](https://github.com/Chloe23077/AT3ProjoctV2/assets/141309342/3de7ab2a-c0b1-4c37-bd50-53c85c07ab87)
