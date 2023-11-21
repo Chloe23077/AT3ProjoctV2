@@ -30,3 +30,13 @@
 ![AT3P2](https://github.com/Chloe23077/AT3ProjoctV2/assets/141309342/138ae3e6-e1b8-40c1-90c2-3fbffc03b2af)
 
 ![AT3P3](https://github.com/Chloe23077/AT3ProjoctV2/assets/141309342/92ebaf86-cd48-4ad9-aac7-7f1df1d70b2f)
+
+#### Q. Which class is responsible for the number of available bays (and why)? 
+##### I think the class resopnsible for the number of available bays is the carpark class. 
+##### This is because I think it tracks the current status in the carpark and manages the available bays.
+#### Q. Which class is responsible for the current temperature (and why)? 
+##### I think the class responsible for the number of available bays is the carpark class.
+##### This is because I think is tracks the current status in the carpark and manages the available bays.
+#### Q. Which class is responsible for the time (and why)?
+##### Like temperature, I think the carpark class manages time. This is because Carpark thinks that the display is updateed and the display class
+##### receives and displays the updated information.
