@@ -1,42 +1,43 @@
 import random
-from car_park import CarPark
 from abc import ABC, abstractmethod
 
 
 class Sensor(ABC):
     def __init__(self,
                  id,
-                 is_active,
-                 carpark):
+                 car_park,
+                 is_active=False
+                 ):
         self.id = id
+        self.car_park = car_park
         self.is_active = is_active
-        self.carpark = carpark
 
     def __str__(self):
-        return f"sensor's {self.id} and status: {self.is_active}"
+        return f'{self.id}: Sensor is {"is active" if self.is_active else "if active"}'
+
+    @abstractmethod
+    def update_car_park(self, plate):
+        pass
 
     def _scan_plate(self):
-        return 'FAKE-' + format(random.randint(0, 990), "03d")
+        return 'FAKE-' + format(random.randint(0, 999), "03d")
 
     def detect_vehicle(self):
         plate = self._scan_plate()
-        self.update_carpark(plate)
-
-    @abstractmethod
-    def update_carpark(self, plate):
-        pass
+        self.update_car_park(plate)
 
 
 class EntrySensor(Sensor):
-    def update_carpark(self, plate):
-        self.carpark.add_car(plate)
+    def update_car_park(self, plate):
+        self.car_park.add_car(plate)
         print(f"Incoming 🚘 vehicle detected. Plate: {plate}")
 
 
 class ExitSensor(Sensor):
-    def update_carpark(self, plate):
-        self.carpark.remove_car(plate)
+    def update_car_park(self, plate):
+        self.car_park.remove_car(plate)
         print(f"Outgoing 🚗 vehicle detected. Plate: {plate}")
 
+# override the _scan_plate
     def _scan_plate(self):
-        return random.choice(self.carpark.plates)
+        return random.choice(self.car_park.plates)
