@@ -14,7 +14,8 @@ class Display:
         return f'Display {self.id}: Display is {"is on" if self.is_on else "is off"}'
 
     def update(self, data):
-        for key, value in data.items():
-            print(f"{key}: {value}")
+        if "message" in data:
+            self.message = data["message"]
+
 
 
