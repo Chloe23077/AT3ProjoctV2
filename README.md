@@ -48,3 +48,9 @@
 ![AT3P6](https://github.com/Chloe23077/AT3ProjoctV2/assets/141309342/7f5add2d-efee-453a-95f4-571b3ce2d0d6)
 
 ![image](https://github.com/Chloe23077/AT3ProjoctV2/assets/141309342/c936d956-203e-4567-91ab-e69c0a6f9bb0)
+
+
+### Test the car park register method
+
+The car park register method should accept a `Sensor` or `Display` object. It should raise a `TypeError` if the object is neither a `Sensor` nor a `Display`. Before proceeding, think about where you would test this behaviour. Should you test it in the `CarPark` unit tests or the `Sensor` unit tests? Why?
+Registering the objects (sensors and displays) in the CarPark class and updating their status seems more appropriate within the context of the CarPark class. This is because the sensors detect the entry and exit of vehicles, notifying the CarPark, which, in turn, updates the displays. Given this flow of interaction, the responsibility for registering and updating lies with the CarPark. Therefore, testing these actions in the unit tests for the CarPark class is deemed suitable.
