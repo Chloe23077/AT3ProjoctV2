@@ -73,4 +73,4 @@ Registering the objects (sensors and displays) in the CarPark class and updating
 
 ![AT3P10](https://github.com/Chloe23077/AT3ProjoctV2/assets/141309342/45541893-0b5d-4c34-a968-bb9f7fe421bf)
 
-
+![image](https://github.com/Chloe23077/AT3ProjoctV2/assets/141309342/4a5b7e11-275a-4109-8d6f-29070196c84e)
