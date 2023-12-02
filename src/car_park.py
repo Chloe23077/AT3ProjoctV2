@@ -1,3 +1,4 @@
+from pathlib import Path
 from sensor import Sensor
 from display import Display
 
@@ -9,7 +10,8 @@ class CarPark:
                  current_vehicle_count=0,
                  sensors=None,
                  displays=None,
-                 plates=None,  # new
+                 plates=None,
+                 log_file=None,
                  ):
         self.location = location
         self.capacity = capacity
@@ -18,6 +20,7 @@ class CarPark:
         # uses the first value if not None, otherwise uses the second value
         self.displays = displays or []
         self.plates = plates or []  # new
+        self.log_file = Path(log_file) if log_file else None
 
     def __str__(self):
         return f"Carpark at {self.location}, with {self.capacity} bays."

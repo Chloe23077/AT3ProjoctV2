@@ -16,6 +16,3 @@ class Display:
     def update(self, data):
         if "message" in data:
             self.message = data["message"]
-
-
-
