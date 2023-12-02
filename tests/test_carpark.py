@@ -49,10 +49,11 @@ class TestCarPark(unittest.TestCase):
         with self.assertRaises(TypeError):
             self.car_park.register("Not a Sensor or Display")
 
+
     def test_log_file_created(self):
-        file_path = "../car_park.py/new_log.txt"
-        new_car_park = CarPark("123 Example Street", 100, log_file=self.log_file_name)
-        self.assertTrue(Path(self.log_file_name).exists())
+        new_carpark = CarPark("123 Example Street", 100, log_file="new_log.txt")
+        self.assertTrue(Path("new_log.txt").exists())
+
 
     def tearDown(self):
         Path(self.log_file_name).resolve().unlink(missing_ok=True)
