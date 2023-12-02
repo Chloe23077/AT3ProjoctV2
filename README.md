@@ -40,6 +40,14 @@
 #### Q. Which class is responsible for the time (and why)?
 ##### Like temperature, I think the carpark class manages time. This is because Carpark thinks that the display is updateed and the display class
 ##### receives and displays the updated information.
+#### 1.	What is the difference between an attribute and a property?
+##### Properties: A characteristic or characteristic of an object. Regarding this project, for example, assuming that there is a car class, it can be the color and model for it.
+##### Property: Among the above attributes, it can be said to be an external accessible attribute. You can read or write values of methods and perform additional actions when accessing properties.
+
+#### 2.	Why do you think we used a dictionary to hold the data we passed the display? List at least one advantage and one disadvantage of this approach.
+##### I think I chose it because I can easily access the value through a specific key.
+##### Advantage: It is useful for processing various types of data because it stores data in the form of key-value.
+##### Disadvantages: When the code becomes complicated, it can be difficult to figure out what data is stored at a glance.
 
 ![AT3P4](https://github.com/Chloe23077/AT3ProjoctV2/assets/141309342/02b333c1-7d14-4404-9f9e-9b65f9dfdce1)
 
@@ -64,3 +72,5 @@ Registering the objects (sensors and displays) in the CarPark class and updating
 ![AT3P9](https://github.com/Chloe23077/AT3ProjoctV2/assets/141309342/b223a81b-9935-4b48-93fd-0a8418510d25)
 
 ![AT3P10](https://github.com/Chloe23077/AT3ProjoctV2/assets/141309342/45541893-0b5d-4c34-a968-bb9f7fe421bf)
+
+
